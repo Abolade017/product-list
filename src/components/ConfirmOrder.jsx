@@ -3,7 +3,12 @@ import React, { useState } from 'react'
 import { FaXmark } from 'react-icons/fa6'
 export const Product = [{
     name: '',
-    desktop: '',
+    image: {
+        "thumbnail": "",
+        "mobile": "",
+        "tablet": "",
+        "desktop": "",
+    },
     category: '',
     price: 0,
     quantity: 0

@@ -77,7 +77,7 @@ const HomePage = () => {
                                                 <div className='text-white'>{quantity}</div>
                                                 <FaPlusCircle className='text-white' onClick={() => addToCart(product)} />
                                             </div></button> :
-                                        <button className='absolute -mt-4 mx-32 md:mx-[64px] h-8 rounded-3xl outline outline-1 outline-Rose-400 hover:outline-red-rose hover:text-red-rose'>
+                                        <button className='absolute -mt-4 mx-20 md:mx-[64px] h-8 rounded-3xl outline outline-1 outline-Rose-400 hover:outline-red-rose hover:text-red-rose'>
                                             <div className='flex space-x-2 px-4 items-center'>
                                                 <img src='/images/icon-add-to-cart.svg' className='h-4 w-4 text-red-rose' />
                                                 <div className='text-Rose-900' onClick={() => addToCart(product)}>Add to cart</div>
@@ -127,10 +127,7 @@ const HomePage = () => {
                                                 </div>
                                             </div>
                                             <div className='mt-10 bg-Rose-100 rounded-md px-6'>
-                                                {/* {cart.map((item, index) => { */}
                                                 <CartItems cart={cart} handleConfirmOrder={handleConfirmOrder} />
-                                                {/* }) */}
-                                                {/* } */}
                                             </div>
                                         </div>
                                         <div className="mt-5 sm:mt-6">

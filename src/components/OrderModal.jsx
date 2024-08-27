@@ -6,9 +6,6 @@ import CartItems from './CartItems'
 import { Product } from './ConfirmOrder'
 export default function OrderModal({ cart = Product, handleConfirmOrder }) {
     const [open, setOpen] = useState(true)
-    // const total = cart.reduce((sum, item) => {
-    //     sum + item.price * item.quantity, 0
-    // })
     function handleModal() {
         return setOpen(!open)
     }

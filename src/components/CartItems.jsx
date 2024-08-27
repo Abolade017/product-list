@@ -1,7 +1,7 @@
 import React from 'react'
 import { Product } from "../components/ConfirmOrder"
 
-const CartItems = ({ cart = Product, handleConfirmOrder }) => {
+const CartItems = ({ cart = Product }) => {
     const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     return (
         <>
